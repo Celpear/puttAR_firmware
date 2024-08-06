@@ -51,9 +51,9 @@ void loop() {
   unsigned long timestamp = millis();
 
   // Prepare the data string in CSV format
-  String data = String(timestamp) + "," +
-                String(LoadCell1.getData()) + "," +
-                String(LoadCell2.getData()) + "," +
+  String data = String(timestamp) + ", " +
+                String(LoadCell1.getData()) + ", " +
+                String(LoadCell2.getData()) + ", " +
                 String(LoadCell3.getData())+ ";";
 
   // Print the data to the Serial Monitor
